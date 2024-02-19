@@ -1,7 +1,7 @@
 #MicroXplorer Configuration settings - do not modify
 ADC.EnableAnalogWatchDog=false
 ADC.IPParameters=SamplingTime,EnableAnalogWatchDog
-ADC.SamplingTime=ADC_SAMPLETIME_55CYCLES_5
+ADC.SamplingTime=ADC_SAMPLETIME_239CYCLES_5
 CAD.formats=
 CAD.pinconfig=
 CAD.provider=
