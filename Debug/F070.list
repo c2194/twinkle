@@ -1985,10 +1985,10 @@ static void MX_TIM1_Init(void)
  8000d28:	187b      	adds	r3, r7, r1
  8000d2a:	2260      	movs	r2, #96	; 0x60
  8000d2c:	601a      	str	r2, [r3, #0]
-  sConfigOC.Pulse = 500;
+  sConfigOC.Pulse = 1000;
  8000d2e:	187b      	adds	r3, r7, r1
  8000d30:	22fa      	movs	r2, #250	; 0xfa
- 8000d32:	0052      	lsls	r2, r2, #1
+ 8000d32:	0092      	lsls	r2, r2, #2
  8000d34:	605a      	str	r2, [r3, #4]
   sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
  8000d36:	187b      	adds	r3, r7, r1
@@ -2173,10 +2173,10 @@ static void MX_TIM3_Init(void)
  8000e40:	1d3b      	adds	r3, r7, #4
  8000e42:	2260      	movs	r2, #96	; 0x60
  8000e44:	601a      	str	r2, [r3, #0]
-  sConfigOC.Pulse = 500;
+  sConfigOC.Pulse = 1000;
  8000e46:	1d3b      	adds	r3, r7, #4
  8000e48:	22fa      	movs	r2, #250	; 0xfa
- 8000e4a:	0052      	lsls	r2, r2, #1
+ 8000e4a:	0092      	lsls	r2, r2, #2
  8000e4c:	605a      	str	r2, [r3, #4]
   sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
  8000e4e:	1d3b      	adds	r3, r7, #4

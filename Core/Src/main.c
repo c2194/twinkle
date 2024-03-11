@@ -62,8 +62,8 @@ uint8_t adc_list_the_po = 0;
 int po_least_at = 2;    // �?查到的变化的�?少次�?
 int po_most_at = 20;    // �?查到的变化的�?多次�?
 int po_u_at = 40;       // 总的稳定次数不能少于 50
-int wave_range = 70;   // 波动范围
-int steady_reange = 50; // 稳定范围
+int wave_range = 30;   // 波动范围
+int steady_reange = 20; // 稳定范围
 uint8_t bx_Ds = 0;
 uint8_t bx_Us = 0;
 uint8_t bx_Ps = 0;
@@ -585,7 +585,7 @@ static void MX_TIM1_Init(void)
     Error_Handler();
   }
   sConfigOC.OCMode = TIM_OCMODE_PWM1;
-  sConfigOC.Pulse = 500;
+  sConfigOC.Pulse = 1000;
   sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
   sConfigOC.OCNPolarity = TIM_OCNPOLARITY_HIGH;
   sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
@@ -647,7 +647,7 @@ static void MX_TIM3_Init(void)
     Error_Handler();
   }
   sConfigOC.OCMode = TIM_OCMODE_PWM1;
-  sConfigOC.Pulse = 500;
+  sConfigOC.Pulse = 1000;
   sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
   sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
   if (HAL_TIM_PWM_ConfigChannel(&htim3, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
